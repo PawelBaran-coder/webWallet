@@ -1,0 +1,82 @@
+body
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("img/doublebubble.png");
+	font-size: 20px;
+}
+
+#container
+{
+	background-color: lightcyan;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 250px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+}
+
+#footer
+{
+	width: 100%;
+	bottom: 10px;
+	position: absolute;
+	text-align: center; 
+	left: 0;
+	right: 0;
+}
+
+input[type=text],
+input[type=name],
+input[type=e-mail],
+input[type=password]
+{
+	width: 300px;
+	background-color: #FFFFF0;
+	color: #666;
+	border: 2px solid #696969;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=name]:focus,
+input[type=e-mail]:focus
+{
+	border: 2px solid #000000;
+	background-color: #FFFFFF;
+	color: #428c42;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
