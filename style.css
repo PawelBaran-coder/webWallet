@@ -8,6 +8,7 @@ body
 
 #container
 {
+	border-radius: 10px;
 	background-color: lightcyan;
 	width: 300px;
 	padding: 50px;
@@ -21,12 +22,13 @@ body
 
 #containerMenu
 {
+	border-radius: 10px;
 	background-color: lightcyan;
 	width: 1200px;
 	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: auto;
+	margin-top: 50px;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
@@ -34,26 +36,29 @@ body
 
 #rectangle
 {
-	width: 1160px;
-	margin: 20px;
-	background-color: white;
-	
+	-webkit-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px;
+	background-color: #ffffff;
+	width: 1200px;
 }
 
 #logo
 {
-	background-color: red;
-	width: 700px;
-	font-size: 50px;
+	width: 1000px;
+	font-size: 30px;
 	float: left;
 	font-family: 'Noto Sans', sans-serif;
 }
 
 #clock
 {
-	background-color: blue;
-	width: 460px;
-	font-size: 50px;
+	width: 200px;
+	font-size: 30px;
 	float: left;
 	font-family: 'Noto Sans', sans-serif;
 	text-align: right;
@@ -63,8 +68,6 @@ body
 {
 	width: 300px;
 	float: left;
-	background-color: white;
-	
 }
 
 #description
@@ -72,7 +75,6 @@ body
 	text-align: center;
 	padding: 20px;
 	margin: 20px;
-	background-color: gray;
 }
 
 #footer
@@ -87,37 +89,97 @@ body
 
 .tile1
 {
-	background-color: green;
+	-webkit-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	border-radius: 10px;
+	background-color: #00FF99;
 	margin: 20px;
 	height: 80px;
 }
 
 .tile2
 {
-	background-color: green;
+	-webkit-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	border-radius: 10px;
+	background-color: #FF3333;
 	margin: 20px;
 	height: 80px;
 }
 
 .tile3
 {
-	background-color: green;
+	-webkit-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	border-radius: 10px;
+	background-color: #7093DB;
 	margin: 20px;
 	height: 80px;
 }
 
 .tile4
 {
-	background-color: green;
+	-webkit-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	border-radius: 10px;
+	background-color: #238E23;
 	margin: 20px;
 	height: 80px;
 }
 
 .tile5
 {
-	background-color: green;
+	-webkit-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 10px 10px 15px 5px rgba(204,204,204,0.9);
+	border-radius: 10px;
+	background-color: #FF6600;
 	margin: 20px;
 	height: 80px;
+}
+
+.tile1:hover
+{
+		background-color: #00EE88;
+}
+
+.tile2:hover
+{
+		background-color: #EE2222;
+}
+
+.tile3:hover
+{
+		background-color: #6082CA;
+}
+
+.tile4:hover
+{
+		background-color: #127D12;
+}
+
+.tile5:hover
+{
+		background-color: #EE5500;
+}
+
+a.tilelink
+{
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	width: 260px;
+	height: 80px;
+}
+
+a.logolink
+{
+	color: #000000;
+	text-decoration: none;
 }
 
 input[type=text],
