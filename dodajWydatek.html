@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
+	
+	<title>Wallet</title>
+	
+	<meta name="description" content="Twoje finanse pod kontrolą." />
+	<meta name="keywords" content="finanse osobiste, elektroniczny prtfel, zarządzanie budżetem domowym, bilans zysków i strat, wydatki, przychody" />
+
+	<script src="timer.js"></script>
+
+</head>
+
+<body onload="odliczanie();">
+
+	<div id="containerMenu">
+
+		<div id="rectangle">
+			<div id="logo"><a href="index.html" class="logolink">Jan Kowalski</a></div>
+			<div id="clock"></div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		<div id="navigation">
+		
+			<div class="tile1">
+				<a href="dodajPrzychod.html" class="tilelink"><i class="icon-money-1"></i>Dodaj przychód</a>
+			</div>
+			<div class="tile2">
+				<a href="dodajWydatek.html" class="tilelink"><i class="icon-edit"></i>Dodaj wydatek</a>
+			</div>
+			<div class="tile3">
+				<a href="przegladajBilans.html" class="tilelink"><i class="icon-chart-bar"></i>Przeglądaj bilans</a>
+			</div>
+			<div class="tile4">
+				<a href="ustawienia.html" class="tilelink"><i class="icon-cog-alt"></i>Ustawienia</a>
+			</div>
+			<div class="tile5">
+				<a href="wyloguj.html" class="tilelink"><i class="icon-off"></i>Wyloguj</a>
+			</div>
+		
+		</div>
+		
+		<div id="description">
+			<form>
+				Kwota:
+				<br>
+				<input type="text" placeholder="0,00 zł" onfocus="this.placeholder=''" onblur="this.placeholder='0,00 zł'">
+				<br>
+				
+				Data:
+				<br>
+				<input type="date" >
+				<br>
+				
+				Sposób płatności:
+				<br>
+		
+					<input type="radio" name="paymentMethod" value="Gotówka"> Gotówka
+					<input type="radio" name="paymentMethod" value="Karta debetowa"> Karta debetowa
+					<input type="radio" name="paymentMethod" value="Karta kredytowa"> Karta kredytowa
+			
+				<br>
+				Kategoria:
+				<br>
+					<input type="radio" name="category" value="Jedzenie"> Jedzenie<br>
+					<input type="radio" name="category" value="Mieszkanie"> Mieszkanie<br>
+					<input type="radio" name="category" value="Transport"> Transport<br>
+					<input type="radio" name="category" value="Telekomunikacja"> Telekomunikacja<br>
+					<input type="radio" name="category" value="Opieka zdrowotna"> Opieka zdrowotna<br>
+					<input type="radio" name="category" value="Ubranie"> Ubranie<br>
+					<input type="radio" name="category" value="Higiena"> Higiena<br>
+					<input type="radio" name="category" value="Dzieci"> Dzieci<br>
+					<input type="radio" name="category" value="Rozrywka"> Rozrywka<br>
+					<input type="radio" name="category" value="Wycieczka"> Wycieczka<br>
+					<input type="radio" name="category" value="Szkolenia"> Szkolenia<br>
+					<input type="radio" name="category" value="Książki"> Książki<br>
+					<input type="radio" name="category" value="Oszczędności"> Oszczędności<br>
+					<input type="radio" name="category" value="Na złotą jesień, czyli emeryturę"> Na złotą jesień, czyli emeryturę<br>
+					<input type="radio" name="category" value="Spłata długów"> Spłata długów<br>
+					<input type="radio" name="category" value="Darowizna"> Darowizna<br>
+					<input type="radio" name="category" value="Inne wydatki"> Inne wydatki<br>
+				Komentarz:
+				<br>
+				<input type="text" placeholder="... " onfocus="this.placeholder=''" onblur="this.placeholder='...'">
+				<br>
+			
+				<input id="addSubmit" type="submit" value="Dodaj">
+				<input id="cancelSubmit" type="reset" value="Anuluj">
+			
+			</form>
+		
+		<div style="clear: both;"></div>
+		
+	</div>
+	
+	<div id="footer">
+			Copyright 2020 &copy; Paweł Baran. Wszelkie prawa zastrzeżone.
+	</div>
+
+</body>
+
+
+</html>
