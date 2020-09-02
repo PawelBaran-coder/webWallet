@@ -14,6 +14,12 @@
 	<meta name="keywords" content="finanse osobiste, elektroniczny prtfel, zarządzanie budżetem domowym, bilans zysków i strat, wydatki, przychody" />
 
 	<script src="timer.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="pieChart.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+	</script>
 
 </head>
 
@@ -54,11 +60,12 @@
 				</div>
 			</div>
 			<div class="dropdown">
-				<button class="dropButton6">| okres |</button>
+				<button class="dropButton6">| Okres |</button>
 				<div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+					<a href="#">Bieżący miesiąc</a>
+					<a href="#">Poprzedni miesiąc</a>
+					<a href="#">Bieżący rok</a>
+					<a href="#">Niestandardowy</a>
 				</div>
 			</div>
 			<div id="clock"></div>
@@ -86,13 +93,33 @@
 		</div>
 		
 		<div id="description">
-		Witaj w programie "Twój budżet domowy".
+		W celu przeglądania bilansu przychodów i wydatków wybierz interesujący Cię przedział czasowy z menu po prawej stronie nagłówka.
 		<br /><br />
-		Po lewej stronie znajduje się lista dostępnych opcji programu. 
-		Po najechaniu kursorem na daną opcje wyświetli się jej krótki opis. Po kliknięciu zostaniesz przeniesiony do okna danej opcji.
-		Zacznij już dziś zarządzać swoim budżetem domowym, kontrolować wydatki i wyciągać wnioski :)
-		<br /><br />
-		Zatem do dzieła!
+			<table>
+				<thead>
+					<tr> <th> KATEGORIA <th>PRZYCHODY <th>WYDATKI
+				<tbody>
+					<tr> <th> Jedzenie <td> 0,0zł <td> 0,0zł
+					<tr> <th> Mieszkanie <td> 0,0zł <td> 0,0zł
+					<tr> <th> Transport   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Telekomunikacja   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Opieka zdrowotna   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Ubranie   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Higiena   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Dzieci   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Rozrywka   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Wycieczka   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Szkolenia   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Książki   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Oszczędności   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Na złotą jesień, czyli emeryturę   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Spłata długów   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Darowizna   <td> 0,0zł <td> 0,0zł
+					<tr> <th> Inne wydatki   <td> 0,0zł <td> 0,0zł
+					<tr> <th> SUMA  <th> 0,0zł <th> 0,0zł
+			</table>
+			
+			<div id="piechart"></div>
 
 		</div>
 		
