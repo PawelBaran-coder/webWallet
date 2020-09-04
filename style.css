@@ -389,12 +389,21 @@ input[type=submit]:hover
 
 td
 {
+	
 	border: 1px solid gray; 
 	text-align: right;
-	
+	padding: 5px;
 }
 
 th 
 {
 	border: 1px solid gray; 
+	padding: 5px;
+}
+
+table
+{
+	align: right;
+	border-collapse: collapse;
+	
 }
