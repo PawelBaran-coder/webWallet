@@ -58,13 +58,11 @@
 			<div class="dropdown">
 				<button class="dropButton6"></button>
 				<div class="dropdown-content">
-				
+
 				</div>
 			</div>
-			<div id="clock">
-			</div>
-			<div style="clear: both;">
-			</div>
+			<div id="clock"></div>
+			<div style="clear: both;"></div>
 		</div>
 		
 		<div id="navigation">
@@ -88,15 +86,68 @@
 		</div>
 		
 		<div id="description">
-		Witaj w programie "Twój budżet domowy".
-		<br /><br />
-		Po lewej stronie znajduje się lista dostępnych opcji programu. 
-		Po najechaniu kursorem na daną opcje wyświetli się jej krótki opis. Po kliknięciu zostaniesz przeniesiony do okna danej opcji.
-		Zacznij już dziś zarządzać swoim budżetem domowym, kontrolować wydatki i wyciągać wnioski :)
-		<br /><br />
-		Zatem do dzieła!
-
-		</div>
+			<form>
+				<b>Kwota:</b>
+				<br>
+				<input type="text" placeholder="0,00 zł" onfocus="this.placeholder=''" onblur="this.placeholder='0,00 zł'">
+				<br /><br />
+				<b>Data:</b>
+				<br>
+				<input type="date" >
+				<br /><br />
+				<b>Sposób płatności:</b>
+				<br>
+					<input type="radio" name="paymentMethod" value="Gotówka"> Gotówka
+					<br>
+					<input type="radio" name="paymentMethod" value="Karta debetowa"> Karta debetowa
+					<br>
+					<input type="radio" name="paymentMethod" value="Karta kredytowa"> Karta kredytowa
+				<br /><br />
+				<b>Kategoria:</b>
+				<br>
+					<input type="radio" name="category" value="Jedzenie"> Jedzenie
+					<br>
+					<input type="radio" name="category" value="Mieszkanie"> Mieszkanie
+					<br>
+					<input type="radio" name="category" value="Transport"> Transport
+					<br>
+					<input type="radio" name="category" value="Telekomunikacja"> Telekomunikacja
+					<br>
+					<input type="radio" name="category" value="Opieka zdrowotna"> Opieka zdrowotna
+					<br>
+					<input type="radio" name="category" value="Ubranie"> Ubranie
+					<br>
+					<input type="radio" name="category" value="Higiena"> Higiena
+					<br>
+					<input type="radio" name="category" value="Dzieci"> Dzieci
+					<br>
+					<input type="radio" name="category" value="Rozrywka"> Rozrywka
+					<br>
+					<input type="radio" name="category" value="Wycieczka"> Wycieczka
+					<br>
+					<input type="radio" name="category" value="Szkolenia"> Szkolenia
+					<br>
+					<input type="radio" name="category" value="Książki"> Książki
+					<br>
+					<input type="radio" name="category" value="Oszczędności"> Oszczędności
+					<br>
+					<input type="radio" name="category" value="Na złotą jesień, czyli emeryturę"> Na złotą jesień, czyli emeryturę
+					<br>
+					<input type="radio" name="category" value="Spłata długów"> Spłata długów
+					<br>
+					<input type="radio" name="category" value="Darowizna"> Darowizna
+					<br>
+					<input type="radio" name="category" value="Inne wydatki"> Inne wydatki
+					<br /><br />
+				<b>Komentarz:</b>
+				<br>
+				<input type="text" placeholder="... " onfocus="this.placeholder=''" onblur="this.placeholder='...'">
+				<br>
+			
+				<input id="addSubmit" type="submit" value="Dodaj">
+				<input id="cancelSubmit" type="reset" value="Anuluj">
+			
+			</form>
 		
 		<div style="clear: both;"></div>
 		

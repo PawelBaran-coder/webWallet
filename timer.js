@@ -7,7 +7,7 @@ function odliczanie()
 		var rok = dzisiaj.getFullYear();
 		
 		document.getElementById("clock").innerHTML = 
-		 dzien+"."+miesiac+"."+rok;
+		 dzien+"/"+miesiac+"/"+rok;
 		 
 		 setTimeout("odliczanie()",1000);
 	}
